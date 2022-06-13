@@ -5,10 +5,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Worker[] arrWorker = new Worker[2];
-       /* try {
-            throw new YearFormatException();*/
+        try {
             for (int i = 0; i < arrWorker.length; i++) {
                 Scanner sc = new Scanner(System.in);
                 System.out.print("Enter PIB: ");
@@ -19,11 +17,10 @@ public class Main {
                 System.out.print("Enter start year: ");
                 int year = sc.nextInt();
                 arrWorker[i] = new Worker(pib, role, year);
-            }
-      /*  } catch (YearFormatException e) {
-            e.method();
-        }*/
-
+             }
+            }catch (Exception e){
+            System.out.println("Year wrong format");
+        }
         System.out.println(Arrays.toString(arrWorker));
     }
 }
