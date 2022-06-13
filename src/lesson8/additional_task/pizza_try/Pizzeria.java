@@ -16,11 +16,15 @@ public class Pizzeria {
             System.out.print("enter pizza name: ");
             String name = sc.next();
             System.out.print("enter pizza price: ");
-            int price = sc.nextInt();
+            //try {
+                int price = sc.nextInt();
+            /*} catch (Exception x){
+                System.out.println(x.getMessage());
+            }*/
             System.out.print("enter pizza size: ");
             int size = sc.nextInt();
             if ((size > PizzaSizeEnum.LARGE.getSize()) || (size < PizzaSizeEnum.SMALL.getSize())) {
-                throw new PizzaInputException("Wrong format or pizza price or pizza size");
+                throw new PizzaInputException("Wrong pizza size");
             }
 
             try {
