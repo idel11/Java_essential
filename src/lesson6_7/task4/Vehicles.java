@@ -1,4 +1,4 @@
-package lesson67.task4;
+package lesson6_7.task4;
 
 public enum Vehicles {
 

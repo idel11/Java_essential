@@ -1,7 +1,5 @@
-package lesson67.task2;
+package lesson6_7.task2;
 
-
-import additional_task.Animal;
 
 public class Main {
     public static void main(String[] args) {

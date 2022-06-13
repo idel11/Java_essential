@@ -1,4 +1,4 @@
-package lesson67.task2;
+package lesson6_7.task2;
 
 public enum Animals {
 
