@@ -13,7 +13,7 @@ public class Main {
 
         for (int i = 0; i < goods.length; i++) {
             Scanner sc = new Scanner(System.in);
-            System.out.print("Enter name: ");
+            System.out.print("Enter goods name: ");
             String name = sc.nextLine();
             System.out.print("Enter shop: ");
             String shop = sc.nextLine();
