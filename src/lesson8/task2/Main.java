@@ -15,12 +15,13 @@ public class Main {
                 System.out.print("Enter role: ");
                 String role = sc2.nextLine();
                 System.out.print("Enter start year: ");
-                int year = sc.nextInt();
-                arrWorker[i] = new Worker(pib, role, year);
-             }
-            }catch (Exception e){
-            System.out.println("Year wrong format");
+                    int year = sc.nextInt();
+                    arrWorker[i] = new Worker(pib, role, year);
+                }
+             }catch (Exception e){
+            System.out.println("\u001B[31m Year format is wrong \u001B[0m");
         }
+
         System.out.println(Arrays.toString(arrWorker));
     }
 }
