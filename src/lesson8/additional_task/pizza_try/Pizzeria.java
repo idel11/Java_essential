@@ -19,7 +19,8 @@ public class Pizzeria {
             int price = sc.nextInt();
             System.out.print("enter pizza size: ");
             int size = sc.nextInt();
-            if ((size > PizzaSizeEnum.LARGE.getSize()) || (size < PizzaSizeEnum.SMALL.getSize())) {
+            if ((size > PizzaSizeEnum.getLargestPizza().getSize())
+                    || (size < PizzaSizeEnum.getSmallestPizza().getSize())) {
                 throw new PizzaInputException("Wrong format or pizza price or pizza size");
             }
 
