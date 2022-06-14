@@ -20,4 +20,12 @@ public class Worker {
                 ", startYear=" + startYear +
                 '}';
     }
+
+    public int getStartYear() {
+        return startYear;
+    }
+
+    public String getpIB() {
+        return pIB;
+    }
 }
