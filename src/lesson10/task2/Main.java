@@ -1,7 +1,5 @@
 package lesson10.task2;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         MyList list = new MyList();
@@ -9,11 +7,11 @@ public class Main {
         System.out.println("============ Перевірка метода addElement та toString ============");
         list.addElement(0);
         list.addElement("test_one");
-        System.out.println(list);
+        System.out.println("Два перших едементи різного типу: " + list);
 
         System.out.println("============ Перевірка метода getByIndex ============");
-        System.out.println(list.getByIndex(0));
-        System.out.println(list.getByIndex(1));
+        System.out.println("Перший елемент по індексу 0: " + list.getByIndex(0));
+        System.out.println("Другий елемент по індексу 1: " + list.getByIndex(1));
 
         System.out.println("============ Перевірка динамічного розширення масиву ============");
         for (int i = 2; i < 10; i++) {
@@ -21,7 +19,7 @@ public class Main {
             System.out.println(list);
         }
 
-        System.out.println("============ Перевірка метода size ============");
-        System.out.println(list.size());
+        System.out.println("============ Перевірка методу size ============");
+        System.out.println("Розмір ліста: " + list.size());
     }
 }
