@@ -17,7 +17,7 @@ public class MyList<T> {
             System.arraycopy(array, 0, newArray, 0, index);
             array = newArray;
         }
-        array[index + 1] = temp;
+        array[index++] = temp;
     }
 
     public T getByIndex(int index) {
